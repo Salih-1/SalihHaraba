@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+
+}
+#demo{
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 4px ridge #24e;;
+    max-width:300px;
+    background-color: crimson;
+    outline: 3px ridge green;;
+    padding: 10px;
+    font-size: x-large;
+    font-weight: 700;
+}
+#box{
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: indigo;
+    outline: 7px inset darkorchid;
+    padding: 10px;
+    height: 700px;
+    max-width: 100%;;
+
+
+}
+h1{
+    text-align: center;
+    text-shadow: 0 0 5px 8px rgb(red, green, blue);
+}
+.frm > div{
+
+    background-color: rgba(red, green, blue, alpha);
+    border: 2px rgb(205, 214, 205);
+    height: auto;
+}
