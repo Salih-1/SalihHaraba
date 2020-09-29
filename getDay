@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.result{
+  background-color: red;
+  height:auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+ align-content: center;
+  }
+  button{
+    vertical-align: middle;
+    text-align: center;
+    margin: 99px;;
+    padding: 15px;
+    width:200px
+ 
+  }
+   
+  button:hover{
+    filter: brightness(120%) saturate(120%);
+    background-color:yellowgreen
+   
+  }
+
+</style>
+</head>
+<body>
+  <div class= "result">
+  </div>
+  <div>
+  <button onclick="getDay()">click</button>
+  </div>
+</body>
+</html>
+
+<script>
+let getDay = function(){
+         var value = +prompt("Enter a number from 1 to 7");
+  
+  let day =" ";
+  if(value===1){
+day ="sunday";
+console.log(`Today is : ${day}.`)
+  }
+  else if(value===2){
+    day="monday";
+    console.log(`Today is : ${day}.`)
+  }
+   else if(value===3){
+    day="thuesday";
+    console.log(`Today is : ${day}.`)
+  }
+   else if(value===4){
+    day="wednesday";
+    console.log(`Today is : ${day}.`)
+  }
+   else if(value===5){
+    day="thursday";
+    console.log(`Today is : ${day}.`)
+  }
+   else if(value===6){
+    day="friday";
+    console.log(`Today is : ${day}.`);
+  }
+  else{
+    day="saturday";
+    console.log(`Today is : ${day}.`);
+  }
+  return day;
+  console.log(`Today is : ${day}.`);
+}
+getDay()
+ let result = document.getElementsByClassName("result").innerHTML=getDay()
+
+
+
+
+
+
+</script>
